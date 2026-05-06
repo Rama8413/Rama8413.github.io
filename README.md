@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <h1>NOTHIN2</h1>
+  <h1>NOTHING</h1>
   
-  <a href="base%20stats.html">Open Base Stats</a>
+  <a href="base_stats.html">Base Stats</a>
   
 </body>
 </html>
