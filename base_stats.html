@@ -1,56 +1,175 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <title>Base Stats - Roblox</title>
+    <meta charset="UTF-8">
+    <title>base stats</title>
     <style>
+    
         body {
-            background-color: #111;
-            color: #0f0;
+            background: #111;
+            color: #eee;
             font-family: monospace;
-            font-size: 16px;
             padding: 20px;
+            line-height: 1.5;
         }
-        .judul {
-            color: #fff;
-            font-weight: bold;
+        
+        .box {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #1a1c22;
+            padding: 20px;
+            border-left: 4px solid #ffaa44;
+        }
+        
+        h1 {
+            color: #ffaa44;
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #333;
+        }
+        
+        h2 {
+            color: #ddcc88;
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 15px 0;
+        }
+        
+        /* not perfect on purpose */
+        .stat-line {
+            background: #0f1117;
+            padding: 6px 12px;
+            margin: 5px 0;
+            border-left: 2px solid #ffaa4477;
+        }
+        
+        .comment {
+            color: #88aa88;
+            font-size: 12px;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px dashed #334;
         }
     </style>
 </head>
 <body>
 
-<pre>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-<span class="judul">BASE SYSTEM — CORE RULES</span>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-<span class="judul">INVENTORY RULE</span>
-· Cannot get 2 of the same item from inventory
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-<span class="judul">STATS (Base)</span>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Max HP: 100          | Max Mana: 100
-Max Cap: 250/250     | On Death: Reset to 100/100
-
-Base Damage: 10 per second
-Base Regen: 0.5 per second
-Base Speed: 16
-Base Cooldown: 1s
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-<span class="judul">DASH & JUMP</span>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Mana Cost: 5
-· Cancel stun with jump or dash
-· Dodge or avoid attacks if timing is accurate
-· Lunge attack with dash — timing based
-
-<span class="judul">PENALTY:</span>
-· Dash into wall = flat and stun for 1s
-</pre>
+<div class="box">
+    <!-- 
+        HEY this is base stats only
+        no ai crap, just manual style
+        i keep comments so you know what each thing does
+    -->
+    
+    <h1>BASE SYSTEM</h1>
+    
+    <!-- inventory rule - simple -->
+    <h2>Inventory Rule</h2>
+    <div class="stat-line">
+        Cannot get 2 of the same item from inventory.
+    </div>
+    
+    <!-- stats section -->
+    <h2>Stats</h2>
+    <div class="stat-line">
+        Base Max HP = 100
+    </div>
+    <div class="stat-line">
+        Base Max Mana = 100
+    </div>
+    <div class="stat-line">
+        Max cap HP and Mana = 250 / 250
+    </div>
+    <div class="stat-line">
+        When dead = Reset to 100 HP and 100 Mana.
+    </div>
+    
+    <!-- base global stats for enemy or character -->
+    <h2>Base Global Stats</h2>
+    <div class="stat-line">
+        Base Damage = 10 per second
+    </div>
+    <div class="stat-line">
+        Base Regen = 0.5 per second
+    </div>
+    <div class="stat-line">
+        Base Speed = 16
+    </div>
+    <div class="stat-line">
+        Base Cooldown = 1 second
+    </div>
+    
+    <!-- dash and jump mechanics -->
+    <h2>Dash and Jump</h2>
+    <div class="stat-line">
+        Mana cost = 5
+    </div>
+    <div class="stat-line">
+        You can cancel stun with jump and dash.
+    </div>
+    <div class="stat-line">
+        Can dodge or avoid attack if really accurate.
+    </div>
+    <div class="stat-line">
+        Can lunge attack with dash. It is all about timing.
+    </div>
+    <div class="stat-line">
+        If you dash and hit a wall when dashing, you get flat and stun for 1 second.
+    </div>
+    
+    <!-- regen rules -->
+    <h2>Regen</h2>
+    <div class="stat-line">
+        Regen 1 Mana every 1 second.
+    </div>
+    <div class="stat-line">
+        If you take no damage for 10 seconds = Regen 5 HP.
+    </div>
+    
+    <!-- full effect list -->
+    <h2>Status Effects</h2>
+    <div class="stat-line">
+        Stun, Increase Speed, Reduce Speed, Increase Damage, Reduce Damage
+    </div>
+    <div class="stat-line">
+        Increase Damage Taken, Reduce Damage Taken, Increase Jump, Reduce Jump
+    </div>
+    <div class="stat-line">
+        Ragdoll Stun, Freeze, Regen HP, Reduce HP, Regen Mana, Reduce Mana
+    </div>
+    <div class="stat-line">
+        Blind Screen, Invisibility, Glitch, Frostbite, Poison, Burn
+    </div>
+    <div class="stat-line">
+        Lifesteal, Force Shield, Knockback, Pull, Knock up
+    </div>
+    <div class="stat-line">
+        Gain Stack, Reduce Stack, Cooldown Increase, Cooldown Reduction
+    </div>
+    
+    <h2>Map System (quick)</h2>
+    <div class="stat-line">
+        Shadow = invisible inside dark spots. Visible if light hits you or same shadow as another player.
+    </div>
+    <div class="stat-line">
+        Light = cooldown 6s, duration 1s. Night time = 3s cooldown, 2s duration.
+    </div>
+    <div class="stat-line">
+        CCTV = light dark spot, detect enemy, marking. Mark lasts 12s.
+    </div>
+    <div class="stat-line">
+        Disable CCTV = approach and interact 6s, dies for 48s.
+    </div>
+    <div class="stat-line">
+        Night time = more shadows, street lamps blink random.
+    </div>
+</div>
 
 </body>
 </html>
