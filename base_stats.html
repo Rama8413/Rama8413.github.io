@@ -1,275 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>System Reference | Core Rules & Mechanics</title>
+    <title>Base Stats - Roblox</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            background: #0a0c10;
-            font-family: 'Segoe UI', 'Fira Code', 'Cascadia Code', 'Roboto Mono', monospace;
-            padding: 2rem 1.5rem;
-            color: #e3e6f0;
-            line-height: 1.45;
-        }
-
-        /* main container – clean card style */
-        .document {
-            max-width: 1280px;
-            margin: 0 auto;
-            background: #0f1117;
-            border-radius: 28px;
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-            overflow: hidden;
-            border: 1px solid #23272f;
-        }
-
-        /* inner spacing */
-        .content {
-            padding: 2rem 2rem 2.5rem 2rem;
-        }
-
-        /* headings: minimal, sharp, technical */
-        h1 {
-            font-size: 1.9rem;
-            font-weight: 600;
-            letter-spacing: -0.3px;
-            border-left: 5px solid #5f7fbf;
-            padding-left: 1.2rem;
-            margin-bottom: 1rem;
-            font-family: inherit;
-            color: #f0f3fc;
-        }
-
-        h2 {
-            font-size: 1.35rem;
-            font-weight: 500;
-            margin: 1.6rem 0 0.8rem 0;
-            padding-bottom: 0.3rem;
-            border-bottom: 1px solid #2a2e3a;
-            color: #cbd5ff;
-            letter-spacing: -0.2px;
-        }
-
-        h3 {
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin: 1rem 0 0.4rem 0;
-            color: #b9c2e6;
-        }
-
-        /* rule blocks */
-        .rule-block {
-            background: #090c12;
-            border-radius: 20px;
-            padding: 1rem 1.4rem;
-            margin: 1rem 0 1.2rem 0;
-            border-left: 3px solid #3e4a6b;
+            background-color: #111;
+            color: #0f0;
             font-family: monospace;
-            font-size: 0.95rem;
+            font-size: 16px;
+            padding: 20px;
         }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-            gap: 0.8rem;
-            margin: 0.8rem 0 1rem 0;
-        }
-
-        .stat-card {
-            background: #0b0e14;
-            border-radius: 16px;
-            padding: 0.7rem 1rem;
-            border: 1px solid #20232c;
-            backdrop-filter: blur(2px);
-        }
-
-        .stat-label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            color: #8d99c9;
-        }
-
-        .stat-value {
-            font-size: 1.3rem;
-            font-weight: 600;
-            font-family: monospace;
-            color: #dee5ff;
-        }
-
-        .mono-list {
-            font-family: 'Fira Code', 'Cascadia Code', monospace;
-            background: #07090e;
-            padding: 0.9rem 1.2rem;
-            border-radius: 18px;
-            font-size: 0.85rem;
-            line-height: 1.5;
-            border: 1px solid #262b36;
-        }
-
-        .effect-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem 0.8rem;
-            margin: 0.7rem 0 0.5rem 0;
-        }
-
-        .effect-tag {
-            background: #131823;
-            border-radius: 32px;
-            padding: 0.2rem 0.9rem;
-            font-size: 0.8rem;
-            font-family: monospace;
-            border: 1px solid #2a3142;
-            color: #c7d2f0;
-        }
-
-        hr {
-            border: none;
-            height: 1px;
-            background: #222736;
-            margin: 1rem 0;
-        }
-
-        .footnote {
-            font-size: 0.7rem;
-            text-align: right;
-            margin-top: 2rem;
-            color: #5e6885;
-            border-top: 1px solid #1e212b;
-            padding-top: 1rem;
-        }
-
-        @media (max-width: 680px) {
-            body {
-                padding: 1rem;
-            }
-            .content {
-                padding: 1.2rem;
-            }
-            h1 {
-                font-size: 1.5rem;
-            }
-        }
-
-        strong {
-            color: #e0e7ff;
-            font-weight: 600;
+        .judul {
+            color: #fff;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-<div class="document">
-    <div class="content">
-        <h1>BASE SYSTEM — CORE RULES</h1>
 
-        <!-- INVENTORY RULE (unique) -->
-        <div class="rule-block">
-            <span style="font-weight:600">INVENTORY RULE</span><br>
-            · Cannot get 2 of the same item from inventory
-        </div>
+<pre>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span class="judul">BASE SYSTEM — CORE RULES</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-        <!-- STATS section -->
-        <h2>STATS (Base)</h2>
-        <div class="stats-grid">
-            <div class="stat-card"><div class="stat-label">MAX HP</div><div class="stat-value">100</div></div>
-            <div class="stat-card"><div class="stat-label">MAX MANA</div><div class="stat-value">100</div></div>
-            <div class="stat-card"><div class="stat-label">MAX CAPACITY</div><div class="stat-value">250 / 250</div></div>
-            <div class="stat-card"><div class="stat-label">ON DEATH</div><div class="stat-value">Reset to 100/100</div></div>
-            <div class="stat-card"><div class="stat-label">BASE DAMAGE</div><div class="stat-value">10 per second</div></div>
-            <div class="stat-card"><div class="stat-label">BASE REGEN</div><div class="stat-value">0.5 per second</div></div>
-            <div class="stat-card"><div class="stat-label">BASE SPEED</div><div class="stat-value">16</div></div>
-            <div class="stat-card"><div class="stat-label">BASE COOLDOWN</div><div class="stat-value">1s</div></div>
-        </div>
+<span class="judul">INVENTORY RULE</span>
+· Cannot get 2 of the same item from inventory
 
-        <!-- DASH & JUMP -->
-        <h2>DASH & JUMP</h2>
-        <div class="mono-list">
-            Mana Cost: 5<br>
-            · Cancel stun with jump or dash<br>
-            · Dodge or avoid attacks if timing is accurate<br>
-            · Lunge attack with dash — timing based<br><br>
-            <strong>PENALTY:</strong><br>
-            · Dash into wall = flat and stun for 1s
-        </div>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span class="judul">STATS (Base)</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-        <!-- PASSIVE REGEN -->
-        <h2>PASSIVE REGEN</h2>
-        <div class="mono-list">
-            · Regen 1 Mana every 1 second<br>
-            · If no damage for 10 seconds: Regen 5 HP
-        </div>
+Max HP: 100          | Max Mana: 100
+Max Cap: 250/250     | On Death: Reset to 100/100
 
-        <!-- EFFECTS LIST (complete, clean) -->
-        <h2>EFFECTS LIST</h2>
-        <div class="effect-list">
-            <span class="effect-tag">Stun</span> <span class="effect-tag">Speed Increase</span> <span class="effect-tag">Speed Reduce</span>
-            <span class="effect-tag">Damage Increase</span> <span class="effect-tag">Damage Reduce</span> <span class="effect-tag">Damage Taken Increase</span>
-            <span class="effect-tag">Damage Taken Reduce</span> <span class="effect-tag">Jump Increase</span> <span class="effect-tag">Jump Reduce</span>
-            <span class="effect-tag">Ragdoll Stun</span> <span class="effect-tag">Freeze</span> <span class="effect-tag">Regen HP</span>
-            <span class="effect-tag">Reduce HP</span> <span class="effect-tag">Regen Mana</span> <span class="effect-tag">Reduce Mana</span>
-            <span class="effect-tag">Blind Screen</span> <span class="effect-tag">Invisibility</span> <span class="effect-tag">Glitch</span>
-            <span class="effect-tag">Frostbite</span> <span class="effect-tag">Poison</span> <span class="effect-tag">Burn</span>
-            <span class="effect-tag">Lifesteal</span> <span class="effect-tag">Force Shield</span> <span class="effect-tag">Knockback</span>
-            <span class="effect-tag">Pull</span> <span class="effect-tag">Knock Up</span> <span class="effect-tag">Gain Stack</span>
-            <span class="effect-tag">Reduce Stack</span> <span class="effect-tag">Cooldown Increase</span> <span class="effect-tag">Cooldown Reduction</span>
-        </div>
+Base Damage: 10 per second
+Base Regen: 0.5 per second
+Base Speed: 16
+Base Cooldown: 1s
 
-        <!-- MAP SYSTEM — SHADOW & CCTV -->
-        <h2>MAP SYSTEM — SHADOW & CCTV</h2>
-        
-        <h3>SHADOW (Dark Spot)</h3>
-        <div class="mono-list">
-            · Always invisible while inside shadow<br>
-            · Visible if hit by light, or in same shadow as another player<br>
-            · Shadow locations: alleys, behind buildings, parking areas, hospital hallways, etc.
-        </div>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span class="judul">DASH & JUMP</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-        <h3>LIGHT</h3>
-        <div class="mono-list">
-            · Cooldown: 6s | Duration: 1s<br>
-            · Effect: Reveals players in shadow<br>
-            · Night time: Cooldown 3s, Duration 2s
-        </div>
+Mana Cost: 5
+· Cancel stun with jump or dash
+· Dodge or avoid attacks if timing is accurate
+· Lunge attack with dash — timing based
 
-        <h3>CCTV</h3>
-        <div class="mono-list">
-            · Function: Lights dark spots, detects enemies, applies Mark<br>
-            · Mark: Touch enemy (1 target only)<br>
-            · Mark Duration: 12s<br>
-            · Mark Effect: Exposed enemy location + red outline<br>
-            · Disable: Approach and interact for 6s → CCTV disabled for 48s
-        </div>
+<span class="judul">PENALTY:</span>
+· Dash into wall = flat and stun for 1s
+</pre>
 
-        <h3>NIGHT TIME</h3>
-        <div class="mono-list">
-            · More shadows<br>
-            · Street lights flicker randomly (on 1-10s, off 1-5s)<br>
-            · Light off = Shadow | Light on = No shadow
-        </div>
-
-        <div class="rule-block" style="margin-top: 0.5rem;">
-            <strong>MAP FEATURES CAN AFFECT GAMEPLAY:</strong><br>
-            · Vents, air ducts, water pipes, trampolines, water, shadow.
-        </div>
-
-        <!-- additional note for completeness – no extra emoji, just clean data -->
-        <hr>
-        <div style="font-size: 0.8rem; font-family: monospace; color: #8792b0;">
-            BASE COOLDOWN: 1s &nbsp;&nbsp;|&nbsp;&nbsp; DASH MANA COST: 5 &nbsp;&nbsp;|&nbsp;&nbsp; MARK DURATION: 12s
-        </div>
-        
-        <div class="footnote">
-            SYSTEM REFERENCE — all mechanics, cooldowns, status effects and map interactions as defined.
-        </div>
-    </div>
-</div>
 </body>
 </html>
