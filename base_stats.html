@@ -1,3 +1,6 @@
+Here is the simplified, monochrome HTML template with comments removed, as you requested.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,54 +8,55 @@
     <title>Base Stats</title>
     <style>
         body {
-            background: #111;
-            color: #eee;
+            background: #fff;
+            color: #000;
             font-family: monospace;
             padding: 20px;
             line-height: 1.5;
+            margin: 0;
         }
         
         .box {
             max-width: 900px;
             margin: 0 auto;
-            background: #1a1c22;
+            background: transparent;
             padding: 20px;
-            border-left: 4px solid #ffaa44;
+            border-left: 2px solid #000;
         }
         
         h1 {
-            color: #ffaa44;
             font-size: 24px;
             margin: 0 0 10px 0;
             padding-bottom: 5px;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid #ccc;
+            font-weight: normal;
         }
         
         h2 {
-            color: #ddcc88;
             font-size: 18px;
             margin: 20px 0 10px 0;
+            font-weight: normal;
+            text-decoration: underline;
         }
         
         hr {
             border: none;
-            border-top: 1px solid #333;
+            border-top: 1px solid #ccc;
             margin: 15px 0;
         }
         
         .stat-line {
-            background: #0f1117;
-            padding: 6px 12px;
-            margin: 5px 0;
-            border-left: 2px solid #ffaa4477;
+            padding: 4px 0;
+            margin: 4px 0;
         }
         
-        .comment {
-            color: #88aa88;
-            font-size: 12px;
-            margin-top: 20px;
-            padding-top: 10px;
-            border-top: 1px dashed #334;
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            background: #eee;
         }
     </style>
 </head>
@@ -158,9 +162,9 @@
     <div class="stat-line">
         CLICK THIS TO BACK.
         <a href="index.html">Back To Main Page</a>
-  
     </div>
 </div>
 
 </body>
 </html>
+```
